@@ -1,0 +1,1323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SchoolInformationManagementSystemDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblAcademicQuarter">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblCalendar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StartingDate" Type="date" Nullable="false" />
+    <Property Name="EndingDate" Type="date" Nullable="false" />
+    <Property Name="EventName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="tblCampus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RegionID" Type="int" Nullable="false" />
+    <Property Name="WoredaID" Type="int" Nullable="false" />
+    <Property Name="SubCityID" Type="int" Nullable="false" />
+    <Property Name="HouseNo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="tblCaseType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblCourse">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblDepartment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblEmergencyContact">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentID" Type="int" Nullable="false" />
+    <Property Name="Fullname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RelationshipTypeID" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="tblEvaluationCriteria">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblExamType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblExtraCurricularActivity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PlannedDate" Type="date" Nullable="false" />
+    <Property Name="ActualDate" Type="date" />
+    <Property Name="Organizers" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="tblGender">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblGrade">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblGradeCourse">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CourseID" Type="int" Nullable="false" />
+    <Property Name="GradeID" Type="int" Nullable="false" />
+    <Property Name="TeacherID" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblGradeSection">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="GradeID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RoomTeacherID" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="tblMaritalStatus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblMeetingFollowup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MeetingScheduleID" Type="int" Nullable="false" />
+    <Property Name="DetailMinute" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="tblMeetingSchedule">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="StartDate" Type="date" Nullable="false" />
+    <Property Name="StartTime" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EndDate" Type="date" Nullable="false" />
+    <Property Name="EndTime" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MeetingTypeID" Type="int" Nullable="false" />
+    <Property Name="GeneralAgenda" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Organizer" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="tblMeetingType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblPaymentPeriod">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblPaymentReason">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblPenalityType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblPermissionType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblRegion">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblRelationshipType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblSetting">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SchoolName" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="SchoolLogo" Type="varbinary(max)" Nullable="false" />
+    <Property Name="PaymentStartingDate" Type="date" Nullable="false" />
+    <Property Name="PaymentEndingDate" Type="date" Nullable="false" />
+    <Property Name="PassingMark" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="tblStudent">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fullname" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="MotherName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GenderID" Type="int" Nullable="false" />
+    <Property Name="BirthDate" Type="date" Nullable="false" />
+    <Property Name="CampusID" Type="int" Nullable="false" />
+    <Property Name="GradeSectionID" Type="int" Nullable="false" />
+    <Property Name="RegionID" Type="int" Nullable="false" />
+    <Property Name="SubCityID" Type="int" Nullable="false" />
+    <Property Name="WoredaID" Type="int" Nullable="false" />
+    <Property Name="HouseNo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsSponsored" Type="bit" Nullable="false" />
+    <Property Name="IsHandicaped" Type="bit" Nullable="false" />
+    <Property Name="AdmissionYear" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="tblStudentAdmission">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="StudentID" Type="int" Nullable="false" />
+    <Property Name="GradeID" Type="int" Nullable="false" />
+    <Property Name="GradeSectionID" Type="int" Nullable="false" />
+    <Property Name="AdmissionDate" Type="date" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdateDate" Type="date" Nullable="false" />
+    <Property Name="UpdateBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblStudentAttendance">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentID" Type="int" Nullable="false" />
+    <Property Name="AbsensenceDuration" Type="int" Nullable="false" />
+    <Property Name="PermissionTypeID" Type="int" Nullable="false" />
+    <Property Name="PermitedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdateDate" Type="date" Nullable="false" />
+    <Property Name="UpdateBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblStudentDiscipline">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudenID" Type="int" Nullable="false" />
+    <Property Name="CaseTypeID" Type="int" Nullable="false" />
+    <Property Name="PenalityTypeID" Type="int" Nullable="false" />
+    <Property Name="EmergencyContactID" Type="int" Nullable="false" />
+    <Property Name="InformedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdateDate" Type="date" Nullable="false" />
+    <Property Name="UpdateBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblStudentMark">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentID" Type="int" Nullable="false" />
+    <Property Name="GradeID" Type="int" Nullable="false" />
+    <Property Name="CourseID" Type="int" Nullable="false" />
+    <Property Name="ExamTypeID" Type="int" Nullable="false" />
+    <Property Name="AcademicQuarterID" Type="int" Nullable="false" />
+    <Property Name="OutOfTotal" Type="int" Nullable="false" />
+    <Property Name="MarkObtained" Type="int" Nullable="false" />
+    <Property Name="AcademicYear" Type="int" Nullable="false" />
+    <Property Name="Remark" Type="nchar" MaxLength="10" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="tblStudentPayment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentID" Type="int" Nullable="false" />
+    <Property Name="PaymentReasonID" Type="int" Nullable="false" />
+    <Property Name="PaymentPeriodID" Type="int" Nullable="false" />
+    <Property Name="RecieptNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CashierName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PaidBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsFullyPaid" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="tblStudentTutorial">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentID" Type="int" Nullable="false" />
+    <Property Name="GradeSectionID" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="tblSubCity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTeacher">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fullname" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="MotherName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GenderID" Type="int" Nullable="false" />
+    <Property Name="CampusID" Type="int" Nullable="false" />
+    <Property Name="BirthDate" Type="date" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FieldOfStudy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DepartmentID" Type="int" Nullable="false" />
+    <Property Name="MaritalStatusID" Type="int" Nullable="false" />
+    <Property Name="YearOfExperience" Type="int" Nullable="false" />
+    <Property Name="SkillDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RegionID" Type="int" Nullable="false" />
+    <Property Name="SubCityID" Type="int" Nullable="false" />
+    <Property Name="WoredaID" Type="int" Nullable="false" />
+    <Property Name="HouseNo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="HiredDate" Type="date" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="tblTeacherEvaluation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TeacherID" Type="int" Nullable="false" />
+    <Property Name="AcademicQuarterID" Type="int" Nullable="false" />
+    <Property Name="EvaluationCriteriaID" Type="int" Nullable="false" />
+    <Property Name="Mark" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="tblTeachersAttendance">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TeachersID" Type="int" Nullable="false" />
+    <Property Name="AbsencenceDuration" Type="int" Nullable="false" />
+    <Property Name="PermissionTypeID" Type="int" Nullable="false" />
+    <Property Name="PermitedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="UpdateDate" Type="date" Nullable="false" />
+    <Property Name="UpdateBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTeacherTutorial">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TeacherID" Type="int" Nullable="false" />
+    <Property Name="AcademicYear" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="tblWoreda">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_tblCampus_tblRegion">
+    <End Role="tblRegion" Type="Self.tblRegion" Multiplicity="1" />
+    <End Role="tblCampus" Type="Self.tblCampus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRegion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblCampus">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCampus_tblSubCity">
+    <End Role="tblSubCity" Type="Self.tblSubCity" Multiplicity="1" />
+    <End Role="tblCampus" Type="Self.tblCampus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSubCity">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblCampus">
+        <PropertyRef Name="SubCityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCampus_tblWoreda">
+    <End Role="tblWoreda" Type="Self.tblWoreda" Multiplicity="1" />
+    <End Role="tblCampus" Type="Self.tblCampus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblWoreda">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblCampus">
+        <PropertyRef Name="WoredaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmergencyContact_tblRelationshipType">
+    <End Role="tblRelationshipType" Type="Self.tblRelationshipType" Multiplicity="1" />
+    <End Role="tblEmergencyContact" Type="Self.tblEmergencyContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRelationshipType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblEmergencyContact">
+        <PropertyRef Name="RelationshipTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblGradeCourse_tblCourse">
+    <End Role="tblCourse" Type="Self.tblCourse" Multiplicity="1" />
+    <End Role="tblGradeCourse" Type="Self.tblGradeCourse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCourse">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblGradeCourse">
+        <PropertyRef Name="CourseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblGradeCourse_tblGrade">
+    <End Role="tblGrade" Type="Self.tblGrade" Multiplicity="1" />
+    <End Role="tblGradeCourse" Type="Self.tblGradeCourse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGrade">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblGradeCourse">
+        <PropertyRef Name="GradeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblGradeCourse_tblTeacher">
+    <End Role="tblTeacher" Type="Self.tblTeacher" Multiplicity="1" />
+    <End Role="tblGradeCourse" Type="Self.tblGradeCourse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTeacher">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblGradeCourse">
+        <PropertyRef Name="TeacherID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblGradeSection_tblGrade">
+    <End Role="tblGrade" Type="Self.tblGrade" Multiplicity="1" />
+    <End Role="tblGradeSection" Type="Self.tblGradeSection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGrade">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblGradeSection">
+        <PropertyRef Name="GradeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblGradeSection_tblTeacher">
+    <End Role="tblTeacher" Type="Self.tblTeacher" Multiplicity="1" />
+    <End Role="tblGradeSection" Type="Self.tblGradeSection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTeacher">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblGradeSection">
+        <PropertyRef Name="RoomTeacherID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMeetingFollowup_tblMeetingFollowup">
+    <End Role="tblMeetingSchedule" Type="Self.tblMeetingSchedule" Multiplicity="1" />
+    <End Role="tblMeetingFollowup" Type="Self.tblMeetingFollowup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMeetingSchedule">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblMeetingFollowup">
+        <PropertyRef Name="MeetingScheduleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMeetingSchedule_tblMeetingType">
+    <End Role="tblMeetingType" Type="Self.tblMeetingType" Multiplicity="1" />
+    <End Role="tblMeetingSchedule" Type="Self.tblMeetingSchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMeetingType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblMeetingSchedule">
+        <PropertyRef Name="MeetingTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudent_tblCampus">
+    <End Role="tblCampus" Type="Self.tblCampus" Multiplicity="1" />
+    <End Role="tblStudent" Type="Self.tblStudent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCampus">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudent">
+        <PropertyRef Name="CampusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudent_tblGender">
+    <End Role="tblGender" Type="Self.tblGender" Multiplicity="1" />
+    <End Role="tblStudent" Type="Self.tblStudent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGender">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudent">
+        <PropertyRef Name="GenderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudent_tblGradeSection">
+    <End Role="tblGradeSection" Type="Self.tblGradeSection" Multiplicity="1" />
+    <End Role="tblStudent" Type="Self.tblStudent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGradeSection">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudent">
+        <PropertyRef Name="GradeSectionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudent_tblRegion">
+    <End Role="tblRegion" Type="Self.tblRegion" Multiplicity="1" />
+    <End Role="tblStudent" Type="Self.tblStudent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRegion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudent">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudent_tblSubCity">
+    <End Role="tblSubCity" Type="Self.tblSubCity" Multiplicity="1" />
+    <End Role="tblStudent" Type="Self.tblStudent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSubCity">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudent">
+        <PropertyRef Name="SubCityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudent_tblWoreda">
+    <End Role="tblWoreda" Type="Self.tblWoreda" Multiplicity="1" />
+    <End Role="tblStudent" Type="Self.tblStudent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblWoreda">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudent">
+        <PropertyRef Name="WoredaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentAdmission_tblGrade">
+    <End Role="tblGrade" Type="Self.tblGrade" Multiplicity="1" />
+    <End Role="tblStudentAdmission" Type="Self.tblStudentAdmission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGrade">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentAdmission">
+        <PropertyRef Name="GradeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentAdmission_tblGradeSection">
+    <End Role="tblGradeSection" Type="Self.tblGradeSection" Multiplicity="1" />
+    <End Role="tblStudentAdmission" Type="Self.tblStudentAdmission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGradeSection">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentAdmission">
+        <PropertyRef Name="GradeSectionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentAdmission_tblStudent">
+    <End Role="tblStudent" Type="Self.tblStudent" Multiplicity="1" />
+    <End Role="tblStudentAdmission" Type="Self.tblStudentAdmission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStudent">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentAdmission">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentAttendance_tblPermissionType">
+    <End Role="tblPermissionType" Type="Self.tblPermissionType" Multiplicity="1" />
+    <End Role="tblStudentAttendance" Type="Self.tblStudentAttendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPermissionType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentAttendance">
+        <PropertyRef Name="PermissionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentAttendance_tblStudent">
+    <End Role="tblStudent" Type="Self.tblStudent" Multiplicity="1" />
+    <End Role="tblStudentAttendance" Type="Self.tblStudentAttendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStudent">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentAttendance">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentDiscipline_tblCaseType">
+    <End Role="tblCaseType" Type="Self.tblCaseType" Multiplicity="1" />
+    <End Role="tblStudentDiscipline" Type="Self.tblStudentDiscipline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCaseType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentDiscipline">
+        <PropertyRef Name="CaseTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentDiscipline_tblEmergencyContact">
+    <End Role="tblEmergencyContact" Type="Self.tblEmergencyContact" Multiplicity="1" />
+    <End Role="tblStudentDiscipline" Type="Self.tblStudentDiscipline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmergencyContact">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentDiscipline">
+        <PropertyRef Name="EmergencyContactID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentDiscipline_tblPenalityType">
+    <End Role="tblPenalityType" Type="Self.tblPenalityType" Multiplicity="1" />
+    <End Role="tblStudentDiscipline" Type="Self.tblStudentDiscipline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPenalityType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentDiscipline">
+        <PropertyRef Name="PenalityTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentDiscipline_tblStudent">
+    <End Role="tblStudent" Type="Self.tblStudent" Multiplicity="1" />
+    <End Role="tblStudentDiscipline" Type="Self.tblStudentDiscipline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStudent">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentDiscipline">
+        <PropertyRef Name="StudenID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentMark_tblAcademicQuarter">
+    <End Role="tblAcademicQuarter" Type="Self.tblAcademicQuarter" Multiplicity="1" />
+    <End Role="tblStudentMark" Type="Self.tblStudentMark" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblAcademicQuarter">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentMark">
+        <PropertyRef Name="AcademicQuarterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentMark_tblCourse">
+    <End Role="tblCourse" Type="Self.tblCourse" Multiplicity="1" />
+    <End Role="tblStudentMark" Type="Self.tblStudentMark" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCourse">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentMark">
+        <PropertyRef Name="CourseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentMark_tblExamType">
+    <End Role="tblExamType" Type="Self.tblExamType" Multiplicity="1" />
+    <End Role="tblStudentMark" Type="Self.tblStudentMark" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblExamType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentMark">
+        <PropertyRef Name="ExamTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentMark_tblGrade">
+    <End Role="tblGrade" Type="Self.tblGrade" Multiplicity="1" />
+    <End Role="tblStudentMark" Type="Self.tblStudentMark" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGrade">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentMark">
+        <PropertyRef Name="GradeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentMark_tblStudent">
+    <End Role="tblStudent" Type="Self.tblStudent" Multiplicity="1" />
+    <End Role="tblStudentMark" Type="Self.tblStudentMark" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStudent">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentMark">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentPayment_tblPaymentPeriod">
+    <End Role="tblPaymentPeriod" Type="Self.tblPaymentPeriod" Multiplicity="1" />
+    <End Role="tblStudentPayment" Type="Self.tblStudentPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPaymentPeriod">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentPayment">
+        <PropertyRef Name="PaymentPeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentPayment_tblPaymentReason">
+    <End Role="tblPaymentReason" Type="Self.tblPaymentReason" Multiplicity="1" />
+    <End Role="tblStudentPayment" Type="Self.tblStudentPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPaymentReason">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentPayment">
+        <PropertyRef Name="PaymentReasonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentPayment_tblStudent">
+    <End Role="tblStudent" Type="Self.tblStudent" Multiplicity="1" />
+    <End Role="tblStudentPayment" Type="Self.tblStudentPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStudent">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentPayment">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentTutorial_tblGradeSection">
+    <End Role="tblGradeSection" Type="Self.tblGradeSection" Multiplicity="1" />
+    <End Role="tblStudentTutorial" Type="Self.tblStudentTutorial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGradeSection">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentTutorial">
+        <PropertyRef Name="GradeSectionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentTutorial_tblStudent">
+    <End Role="tblStudent" Type="Self.tblStudent" Multiplicity="1" />
+    <End Role="tblStudentTutorial" Type="Self.tblStudentTutorial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStudent">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentTutorial">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacher_tblCampus">
+    <End Role="tblCampus" Type="Self.tblCampus" Multiplicity="1" />
+    <End Role="tblTeacher" Type="Self.tblTeacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCampus">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacher">
+        <PropertyRef Name="CampusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacher_tblDepartment">
+    <End Role="tblDepartment" Type="Self.tblDepartment" Multiplicity="1" />
+    <End Role="tblTeacher" Type="Self.tblTeacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDepartment">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacher">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacher_tblGender">
+    <End Role="tblGender" Type="Self.tblGender" Multiplicity="1" />
+    <End Role="tblTeacher" Type="Self.tblTeacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGender">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacher">
+        <PropertyRef Name="GenderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacher_tblMaritalStatus">
+    <End Role="tblMaritalStatus" Type="Self.tblMaritalStatus" Multiplicity="1" />
+    <End Role="tblTeacher" Type="Self.tblTeacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMaritalStatus">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacher">
+        <PropertyRef Name="MaritalStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacher_tblRegion">
+    <End Role="tblRegion" Type="Self.tblRegion" Multiplicity="1" />
+    <End Role="tblTeacher" Type="Self.tblTeacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRegion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacher">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacher_tblSubCity">
+    <End Role="tblSubCity" Type="Self.tblSubCity" Multiplicity="1" />
+    <End Role="tblTeacher" Type="Self.tblTeacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSubCity">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacher">
+        <PropertyRef Name="SubCityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacher_tblWoreda">
+    <End Role="tblWoreda" Type="Self.tblWoreda" Multiplicity="1" />
+    <End Role="tblTeacher" Type="Self.tblTeacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblWoreda">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacher">
+        <PropertyRef Name="WoredaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacherEvaluation_tblAcademicQuarter">
+    <End Role="tblAcademicQuarter" Type="Self.tblAcademicQuarter" Multiplicity="1" />
+    <End Role="tblTeacherEvaluation" Type="Self.tblTeacherEvaluation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblAcademicQuarter">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacherEvaluation">
+        <PropertyRef Name="AcademicQuarterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacherEvaluation_tblEvaluationCriteria">
+    <End Role="tblEvaluationCriteria" Type="Self.tblEvaluationCriteria" Multiplicity="1" />
+    <End Role="tblTeacherEvaluation" Type="Self.tblTeacherEvaluation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEvaluationCriteria">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacherEvaluation">
+        <PropertyRef Name="EvaluationCriteriaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacherEvaluation_tblTeacher">
+    <End Role="tblTeacher" Type="Self.tblTeacher" Multiplicity="1" />
+    <End Role="tblTeacherEvaluation" Type="Self.tblTeacherEvaluation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTeacher">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacherEvaluation">
+        <PropertyRef Name="TeacherID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeachersAttendance_tblPermissionType">
+    <End Role="tblPermissionType" Type="Self.tblPermissionType" Multiplicity="1" />
+    <End Role="tblTeachersAttendance" Type="Self.tblTeachersAttendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPermissionType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeachersAttendance">
+        <PropertyRef Name="PermissionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeachersAttendance_tblTeacher">
+    <End Role="tblTeacher" Type="Self.tblTeacher" Multiplicity="1" />
+    <End Role="tblTeachersAttendance" Type="Self.tblTeachersAttendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTeacher">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeachersAttendance">
+        <PropertyRef Name="TeachersID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacherTutorial_tblTeacher">
+    <End Role="tblTeacher" Type="Self.tblTeacher" Multiplicity="1" />
+    <End Role="tblTeacherTutorial" Type="Self.tblTeacherTutorial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTeacher">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacherTutorial">
+        <PropertyRef Name="TeacherID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SchoolInformationManagementSystemDBModelStoreContainer">
+    <EntitySet Name="tblAcademicQuarter" EntityType="Self.tblAcademicQuarter" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCalendar" EntityType="Self.tblCalendar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCampus" EntityType="Self.tblCampus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCaseType" EntityType="Self.tblCaseType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCourse" EntityType="Self.tblCourse" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDepartment" EntityType="Self.tblDepartment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmergencyContact" EntityType="Self.tblEmergencyContact" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEvaluationCriteria" EntityType="Self.tblEvaluationCriteria" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblExamType" EntityType="Self.tblExamType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblExtraCurricularActivity" EntityType="Self.tblExtraCurricularActivity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblGender" EntityType="Self.tblGender" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblGrade" EntityType="Self.tblGrade" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblGradeCourse" EntityType="Self.tblGradeCourse" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblGradeSection" EntityType="Self.tblGradeSection" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMaritalStatus" EntityType="Self.tblMaritalStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMeetingFollowup" EntityType="Self.tblMeetingFollowup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMeetingSchedule" EntityType="Self.tblMeetingSchedule" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMeetingType" EntityType="Self.tblMeetingType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPaymentPeriod" EntityType="Self.tblPaymentPeriod" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPaymentReason" EntityType="Self.tblPaymentReason" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPenalityType" EntityType="Self.tblPenalityType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPermissionType" EntityType="Self.tblPermissionType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblRegion" EntityType="Self.tblRegion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblRelationshipType" EntityType="Self.tblRelationshipType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSetting" EntityType="Self.tblSetting" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblStudent" EntityType="Self.tblStudent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblStudentAdmission" EntityType="Self.tblStudentAdmission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblStudentAttendance" EntityType="Self.tblStudentAttendance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblStudentDiscipline" EntityType="Self.tblStudentDiscipline" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblStudentMark" EntityType="Self.tblStudentMark" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblStudentPayment" EntityType="Self.tblStudentPayment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblStudentTutorial" EntityType="Self.tblStudentTutorial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSubCity" EntityType="Self.tblSubCity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTeacher" EntityType="Self.tblTeacher" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTeacherEvaluation" EntityType="Self.tblTeacherEvaluation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTeachersAttendance" EntityType="Self.tblTeachersAttendance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTeacherTutorial" EntityType="Self.tblTeacherTutorial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblWoreda" EntityType="Self.tblWoreda" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tblCampus_tblRegion" Association="Self.FK_tblCampus_tblRegion">
+      <End Role="tblRegion" EntitySet="tblRegion" />
+      <End Role="tblCampus" EntitySet="tblCampus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCampus_tblSubCity" Association="Self.FK_tblCampus_tblSubCity">
+      <End Role="tblSubCity" EntitySet="tblSubCity" />
+      <End Role="tblCampus" EntitySet="tblCampus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCampus_tblWoreda" Association="Self.FK_tblCampus_tblWoreda">
+      <End Role="tblWoreda" EntitySet="tblWoreda" />
+      <End Role="tblCampus" EntitySet="tblCampus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmergencyContact_tblRelationshipType" Association="Self.FK_tblEmergencyContact_tblRelationshipType">
+      <End Role="tblRelationshipType" EntitySet="tblRelationshipType" />
+      <End Role="tblEmergencyContact" EntitySet="tblEmergencyContact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblGradeCourse_tblCourse" Association="Self.FK_tblGradeCourse_tblCourse">
+      <End Role="tblCourse" EntitySet="tblCourse" />
+      <End Role="tblGradeCourse" EntitySet="tblGradeCourse" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblGradeCourse_tblGrade" Association="Self.FK_tblGradeCourse_tblGrade">
+      <End Role="tblGrade" EntitySet="tblGrade" />
+      <End Role="tblGradeCourse" EntitySet="tblGradeCourse" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblGradeCourse_tblTeacher" Association="Self.FK_tblGradeCourse_tblTeacher">
+      <End Role="tblTeacher" EntitySet="tblTeacher" />
+      <End Role="tblGradeCourse" EntitySet="tblGradeCourse" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblGradeSection_tblGrade" Association="Self.FK_tblGradeSection_tblGrade">
+      <End Role="tblGrade" EntitySet="tblGrade" />
+      <End Role="tblGradeSection" EntitySet="tblGradeSection" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblGradeSection_tblTeacher" Association="Self.FK_tblGradeSection_tblTeacher">
+      <End Role="tblTeacher" EntitySet="tblTeacher" />
+      <End Role="tblGradeSection" EntitySet="tblGradeSection" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMeetingFollowup_tblMeetingFollowup" Association="Self.FK_tblMeetingFollowup_tblMeetingFollowup">
+      <End Role="tblMeetingSchedule" EntitySet="tblMeetingSchedule" />
+      <End Role="tblMeetingFollowup" EntitySet="tblMeetingFollowup" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMeetingSchedule_tblMeetingType" Association="Self.FK_tblMeetingSchedule_tblMeetingType">
+      <End Role="tblMeetingType" EntitySet="tblMeetingType" />
+      <End Role="tblMeetingSchedule" EntitySet="tblMeetingSchedule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudent_tblCampus" Association="Self.FK_tblStudent_tblCampus">
+      <End Role="tblCampus" EntitySet="tblCampus" />
+      <End Role="tblStudent" EntitySet="tblStudent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudent_tblGender" Association="Self.FK_tblStudent_tblGender">
+      <End Role="tblGender" EntitySet="tblGender" />
+      <End Role="tblStudent" EntitySet="tblStudent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudent_tblGradeSection" Association="Self.FK_tblStudent_tblGradeSection">
+      <End Role="tblGradeSection" EntitySet="tblGradeSection" />
+      <End Role="tblStudent" EntitySet="tblStudent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudent_tblRegion" Association="Self.FK_tblStudent_tblRegion">
+      <End Role="tblRegion" EntitySet="tblRegion" />
+      <End Role="tblStudent" EntitySet="tblStudent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudent_tblSubCity" Association="Self.FK_tblStudent_tblSubCity">
+      <End Role="tblSubCity" EntitySet="tblSubCity" />
+      <End Role="tblStudent" EntitySet="tblStudent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudent_tblWoreda" Association="Self.FK_tblStudent_tblWoreda">
+      <End Role="tblWoreda" EntitySet="tblWoreda" />
+      <End Role="tblStudent" EntitySet="tblStudent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentAdmission_tblGrade" Association="Self.FK_tblStudentAdmission_tblGrade">
+      <End Role="tblGrade" EntitySet="tblGrade" />
+      <End Role="tblStudentAdmission" EntitySet="tblStudentAdmission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentAdmission_tblGradeSection" Association="Self.FK_tblStudentAdmission_tblGradeSection">
+      <End Role="tblGradeSection" EntitySet="tblGradeSection" />
+      <End Role="tblStudentAdmission" EntitySet="tblStudentAdmission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentAdmission_tblStudent" Association="Self.FK_tblStudentAdmission_tblStudent">
+      <End Role="tblStudent" EntitySet="tblStudent" />
+      <End Role="tblStudentAdmission" EntitySet="tblStudentAdmission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentAttendance_tblPermissionType" Association="Self.FK_tblStudentAttendance_tblPermissionType">
+      <End Role="tblPermissionType" EntitySet="tblPermissionType" />
+      <End Role="tblStudentAttendance" EntitySet="tblStudentAttendance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentAttendance_tblStudent" Association="Self.FK_tblStudentAttendance_tblStudent">
+      <End Role="tblStudent" EntitySet="tblStudent" />
+      <End Role="tblStudentAttendance" EntitySet="tblStudentAttendance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentDiscipline_tblCaseType" Association="Self.FK_tblStudentDiscipline_tblCaseType">
+      <End Role="tblCaseType" EntitySet="tblCaseType" />
+      <End Role="tblStudentDiscipline" EntitySet="tblStudentDiscipline" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentDiscipline_tblEmergencyContact" Association="Self.FK_tblStudentDiscipline_tblEmergencyContact">
+      <End Role="tblEmergencyContact" EntitySet="tblEmergencyContact" />
+      <End Role="tblStudentDiscipline" EntitySet="tblStudentDiscipline" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentDiscipline_tblPenalityType" Association="Self.FK_tblStudentDiscipline_tblPenalityType">
+      <End Role="tblPenalityType" EntitySet="tblPenalityType" />
+      <End Role="tblStudentDiscipline" EntitySet="tblStudentDiscipline" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentDiscipline_tblStudent" Association="Self.FK_tblStudentDiscipline_tblStudent">
+      <End Role="tblStudent" EntitySet="tblStudent" />
+      <End Role="tblStudentDiscipline" EntitySet="tblStudentDiscipline" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentMark_tblAcademicQuarter" Association="Self.FK_tblStudentMark_tblAcademicQuarter">
+      <End Role="tblAcademicQuarter" EntitySet="tblAcademicQuarter" />
+      <End Role="tblStudentMark" EntitySet="tblStudentMark" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentMark_tblCourse" Association="Self.FK_tblStudentMark_tblCourse">
+      <End Role="tblCourse" EntitySet="tblCourse" />
+      <End Role="tblStudentMark" EntitySet="tblStudentMark" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentMark_tblExamType" Association="Self.FK_tblStudentMark_tblExamType">
+      <End Role="tblExamType" EntitySet="tblExamType" />
+      <End Role="tblStudentMark" EntitySet="tblStudentMark" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentMark_tblGrade" Association="Self.FK_tblStudentMark_tblGrade">
+      <End Role="tblGrade" EntitySet="tblGrade" />
+      <End Role="tblStudentMark" EntitySet="tblStudentMark" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentMark_tblStudent" Association="Self.FK_tblStudentMark_tblStudent">
+      <End Role="tblStudent" EntitySet="tblStudent" />
+      <End Role="tblStudentMark" EntitySet="tblStudentMark" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentPayment_tblPaymentPeriod" Association="Self.FK_tblStudentPayment_tblPaymentPeriod">
+      <End Role="tblPaymentPeriod" EntitySet="tblPaymentPeriod" />
+      <End Role="tblStudentPayment" EntitySet="tblStudentPayment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentPayment_tblPaymentReason" Association="Self.FK_tblStudentPayment_tblPaymentReason">
+      <End Role="tblPaymentReason" EntitySet="tblPaymentReason" />
+      <End Role="tblStudentPayment" EntitySet="tblStudentPayment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentPayment_tblStudent" Association="Self.FK_tblStudentPayment_tblStudent">
+      <End Role="tblStudent" EntitySet="tblStudent" />
+      <End Role="tblStudentPayment" EntitySet="tblStudentPayment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentTutorial_tblGradeSection" Association="Self.FK_tblStudentTutorial_tblGradeSection">
+      <End Role="tblGradeSection" EntitySet="tblGradeSection" />
+      <End Role="tblStudentTutorial" EntitySet="tblStudentTutorial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentTutorial_tblStudent" Association="Self.FK_tblStudentTutorial_tblStudent">
+      <End Role="tblStudent" EntitySet="tblStudent" />
+      <End Role="tblStudentTutorial" EntitySet="tblStudentTutorial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacher_tblCampus" Association="Self.FK_tblTeacher_tblCampus">
+      <End Role="tblCampus" EntitySet="tblCampus" />
+      <End Role="tblTeacher" EntitySet="tblTeacher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacher_tblDepartment" Association="Self.FK_tblTeacher_tblDepartment">
+      <End Role="tblDepartment" EntitySet="tblDepartment" />
+      <End Role="tblTeacher" EntitySet="tblTeacher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacher_tblGender" Association="Self.FK_tblTeacher_tblGender">
+      <End Role="tblGender" EntitySet="tblGender" />
+      <End Role="tblTeacher" EntitySet="tblTeacher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacher_tblMaritalStatus" Association="Self.FK_tblTeacher_tblMaritalStatus">
+      <End Role="tblMaritalStatus" EntitySet="tblMaritalStatus" />
+      <End Role="tblTeacher" EntitySet="tblTeacher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacher_tblRegion" Association="Self.FK_tblTeacher_tblRegion">
+      <End Role="tblRegion" EntitySet="tblRegion" />
+      <End Role="tblTeacher" EntitySet="tblTeacher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacher_tblSubCity" Association="Self.FK_tblTeacher_tblSubCity">
+      <End Role="tblSubCity" EntitySet="tblSubCity" />
+      <End Role="tblTeacher" EntitySet="tblTeacher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacher_tblWoreda" Association="Self.FK_tblTeacher_tblWoreda">
+      <End Role="tblWoreda" EntitySet="tblWoreda" />
+      <End Role="tblTeacher" EntitySet="tblTeacher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacherEvaluation_tblAcademicQuarter" Association="Self.FK_tblTeacherEvaluation_tblAcademicQuarter">
+      <End Role="tblAcademicQuarter" EntitySet="tblAcademicQuarter" />
+      <End Role="tblTeacherEvaluation" EntitySet="tblTeacherEvaluation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacherEvaluation_tblEvaluationCriteria" Association="Self.FK_tblTeacherEvaluation_tblEvaluationCriteria">
+      <End Role="tblEvaluationCriteria" EntitySet="tblEvaluationCriteria" />
+      <End Role="tblTeacherEvaluation" EntitySet="tblTeacherEvaluation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacherEvaluation_tblTeacher" Association="Self.FK_tblTeacherEvaluation_tblTeacher">
+      <End Role="tblTeacher" EntitySet="tblTeacher" />
+      <End Role="tblTeacherEvaluation" EntitySet="tblTeacherEvaluation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeachersAttendance_tblPermissionType" Association="Self.FK_tblTeachersAttendance_tblPermissionType">
+      <End Role="tblPermissionType" EntitySet="tblPermissionType" />
+      <End Role="tblTeachersAttendance" EntitySet="tblTeachersAttendance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeachersAttendance_tblTeacher" Association="Self.FK_tblTeachersAttendance_tblTeacher">
+      <End Role="tblTeacher" EntitySet="tblTeacher" />
+      <End Role="tblTeachersAttendance" EntitySet="tblTeachersAttendance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacherTutorial_tblTeacher" Association="Self.FK_tblTeacherTutorial_tblTeacher">
+      <End Role="tblTeacher" EntitySet="tblTeacher" />
+      <End Role="tblTeacherTutorial" EntitySet="tblTeacherTutorial" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

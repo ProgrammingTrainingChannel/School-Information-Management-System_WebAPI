@@ -1,0 +1,1421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SchoolInformationManagementSystemDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SchoolInformationManagementSystemDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblAcademicQuarters" EntityType="SchoolInformationManagementSystemDBModel.tblAcademicQuarter" />
+    <EntitySet Name="tblCalendars" EntityType="SchoolInformationManagementSystemDBModel.tblCalendar" />
+    <EntitySet Name="tblCampus" EntityType="SchoolInformationManagementSystemDBModel.tblCampu" />
+    <EntitySet Name="tblCaseTypes" EntityType="SchoolInformationManagementSystemDBModel.tblCaseType" />
+    <EntitySet Name="tblCourses" EntityType="SchoolInformationManagementSystemDBModel.tblCourse" />
+    <EntitySet Name="tblDepartments" EntityType="SchoolInformationManagementSystemDBModel.tblDepartment" />
+    <EntitySet Name="tblEmergencyContacts" EntityType="SchoolInformationManagementSystemDBModel.tblEmergencyContact" />
+    <EntitySet Name="tblEvaluationCriterias" EntityType="SchoolInformationManagementSystemDBModel.tblEvaluationCriteria" />
+    <EntitySet Name="tblExamTypes" EntityType="SchoolInformationManagementSystemDBModel.tblExamType" />
+    <EntitySet Name="tblExtraCurricularActivities" EntityType="SchoolInformationManagementSystemDBModel.tblExtraCurricularActivity" />
+    <EntitySet Name="tblGenders" EntityType="SchoolInformationManagementSystemDBModel.tblGender" />
+    <EntitySet Name="tblGrades" EntityType="SchoolInformationManagementSystemDBModel.tblGrade" />
+    <EntitySet Name="tblGradeCourses" EntityType="SchoolInformationManagementSystemDBModel.tblGradeCourse" />
+    <EntitySet Name="tblGradeSections" EntityType="SchoolInformationManagementSystemDBModel.tblGradeSection" />
+    <EntitySet Name="tblMaritalStatus" EntityType="SchoolInformationManagementSystemDBModel.tblMaritalStatu" />
+    <EntitySet Name="tblMeetingFollowups" EntityType="SchoolInformationManagementSystemDBModel.tblMeetingFollowup" />
+    <EntitySet Name="tblMeetingSchedules" EntityType="SchoolInformationManagementSystemDBModel.tblMeetingSchedule" />
+    <EntitySet Name="tblMeetingTypes" EntityType="SchoolInformationManagementSystemDBModel.tblMeetingType" />
+    <EntitySet Name="tblPaymentPeriods" EntityType="SchoolInformationManagementSystemDBModel.tblPaymentPeriod" />
+    <EntitySet Name="tblPaymentReasons" EntityType="SchoolInformationManagementSystemDBModel.tblPaymentReason" />
+    <EntitySet Name="tblPenalityTypes" EntityType="SchoolInformationManagementSystemDBModel.tblPenalityType" />
+    <EntitySet Name="tblPermissionTypes" EntityType="SchoolInformationManagementSystemDBModel.tblPermissionType" />
+    <EntitySet Name="tblRegions" EntityType="SchoolInformationManagementSystemDBModel.tblRegion" />
+    <EntitySet Name="tblRelationshipTypes" EntityType="SchoolInformationManagementSystemDBModel.tblRelationshipType" />
+    <EntitySet Name="tblSettings" EntityType="SchoolInformationManagementSystemDBModel.tblSetting" />
+    <EntitySet Name="tblStudents" EntityType="SchoolInformationManagementSystemDBModel.tblStudent" />
+    <EntitySet Name="tblStudentAdmissions" EntityType="SchoolInformationManagementSystemDBModel.tblStudentAdmission" />
+    <EntitySet Name="tblStudentAttendances" EntityType="SchoolInformationManagementSystemDBModel.tblStudentAttendance" />
+    <EntitySet Name="tblStudentDisciplines" EntityType="SchoolInformationManagementSystemDBModel.tblStudentDiscipline" />
+    <EntitySet Name="tblStudentMarks" EntityType="SchoolInformationManagementSystemDBModel.tblStudentMark" />
+    <EntitySet Name="tblStudentPayments" EntityType="SchoolInformationManagementSystemDBModel.tblStudentPayment" />
+    <EntitySet Name="tblStudentTutorials" EntityType="SchoolInformationManagementSystemDBModel.tblStudentTutorial" />
+    <EntitySet Name="tblSubCities" EntityType="SchoolInformationManagementSystemDBModel.tblSubCity" />
+    <EntitySet Name="tblTeachers" EntityType="SchoolInformationManagementSystemDBModel.tblTeacher" />
+    <EntitySet Name="tblTeacherEvaluations" EntityType="SchoolInformationManagementSystemDBModel.tblTeacherEvaluation" />
+    <EntitySet Name="tblTeachersAttendances" EntityType="SchoolInformationManagementSystemDBModel.tblTeachersAttendance" />
+    <EntitySet Name="tblTeacherTutorials" EntityType="SchoolInformationManagementSystemDBModel.tblTeacherTutorial" />
+    <EntitySet Name="tblWoredas" EntityType="SchoolInformationManagementSystemDBModel.tblWoreda" />
+    <AssociationSet Name="FK_tblStudentMark_tblAcademicQuarter" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblAcademicQuarter">
+      <End Role="tblAcademicQuarter" EntitySet="tblAcademicQuarters" />
+      <End Role="tblStudentMark" EntitySet="tblStudentMarks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacherEvaluation_tblAcademicQuarter" Association="SchoolInformationManagementSystemDBModel.FK_tblTeacherEvaluation_tblAcademicQuarter">
+      <End Role="tblAcademicQuarter" EntitySet="tblAcademicQuarters" />
+      <End Role="tblTeacherEvaluation" EntitySet="tblTeacherEvaluations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCampus_tblRegion" Association="SchoolInformationManagementSystemDBModel.FK_tblCampus_tblRegion">
+      <End Role="tblRegion" EntitySet="tblRegions" />
+      <End Role="tblCampu" EntitySet="tblCampus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCampus_tblSubCity" Association="SchoolInformationManagementSystemDBModel.FK_tblCampus_tblSubCity">
+      <End Role="tblSubCity" EntitySet="tblSubCities" />
+      <End Role="tblCampu" EntitySet="tblCampus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCampus_tblWoreda" Association="SchoolInformationManagementSystemDBModel.FK_tblCampus_tblWoreda">
+      <End Role="tblWoreda" EntitySet="tblWoredas" />
+      <End Role="tblCampu" EntitySet="tblCampus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudent_tblCampus" Association="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblCampus">
+      <End Role="tblCampu" EntitySet="tblCampus" />
+      <End Role="tblStudent" EntitySet="tblStudents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacher_tblCampus" Association="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblCampus">
+      <End Role="tblCampu" EntitySet="tblCampus" />
+      <End Role="tblTeacher" EntitySet="tblTeachers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentDiscipline_tblCaseType" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentDiscipline_tblCaseType">
+      <End Role="tblCaseType" EntitySet="tblCaseTypes" />
+      <End Role="tblStudentDiscipline" EntitySet="tblStudentDisciplines" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblGradeCourse_tblCourse" Association="SchoolInformationManagementSystemDBModel.FK_tblGradeCourse_tblCourse">
+      <End Role="tblCourse" EntitySet="tblCourses" />
+      <End Role="tblGradeCourse" EntitySet="tblGradeCourses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentMark_tblCourse" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblCourse">
+      <End Role="tblCourse" EntitySet="tblCourses" />
+      <End Role="tblStudentMark" EntitySet="tblStudentMarks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacher_tblDepartment" Association="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblDepartment">
+      <End Role="tblDepartment" EntitySet="tblDepartments" />
+      <End Role="tblTeacher" EntitySet="tblTeachers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmergencyContact_tblRelationshipType" Association="SchoolInformationManagementSystemDBModel.FK_tblEmergencyContact_tblRelationshipType">
+      <End Role="tblRelationshipType" EntitySet="tblRelationshipTypes" />
+      <End Role="tblEmergencyContact" EntitySet="tblEmergencyContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentDiscipline_tblEmergencyContact" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentDiscipline_tblEmergencyContact">
+      <End Role="tblEmergencyContact" EntitySet="tblEmergencyContacts" />
+      <End Role="tblStudentDiscipline" EntitySet="tblStudentDisciplines" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacherEvaluation_tblEvaluationCriteria" Association="SchoolInformationManagementSystemDBModel.FK_tblTeacherEvaluation_tblEvaluationCriteria">
+      <End Role="tblEvaluationCriteria" EntitySet="tblEvaluationCriterias" />
+      <End Role="tblTeacherEvaluation" EntitySet="tblTeacherEvaluations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentMark_tblExamType" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblExamType">
+      <End Role="tblExamType" EntitySet="tblExamTypes" />
+      <End Role="tblStudentMark" EntitySet="tblStudentMarks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudent_tblGender" Association="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblGender">
+      <End Role="tblGender" EntitySet="tblGenders" />
+      <End Role="tblStudent" EntitySet="tblStudents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacher_tblGender" Association="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblGender">
+      <End Role="tblGender" EntitySet="tblGenders" />
+      <End Role="tblTeacher" EntitySet="tblTeachers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblGradeCourse_tblGrade" Association="SchoolInformationManagementSystemDBModel.FK_tblGradeCourse_tblGrade">
+      <End Role="tblGrade" EntitySet="tblGrades" />
+      <End Role="tblGradeCourse" EntitySet="tblGradeCourses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblGradeSection_tblGrade" Association="SchoolInformationManagementSystemDBModel.FK_tblGradeSection_tblGrade">
+      <End Role="tblGrade" EntitySet="tblGrades" />
+      <End Role="tblGradeSection" EntitySet="tblGradeSections" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentAdmission_tblGrade" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentAdmission_tblGrade">
+      <End Role="tblGrade" EntitySet="tblGrades" />
+      <End Role="tblStudentAdmission" EntitySet="tblStudentAdmissions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentMark_tblGrade" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblGrade">
+      <End Role="tblGrade" EntitySet="tblGrades" />
+      <End Role="tblStudentMark" EntitySet="tblStudentMarks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblGradeCourse_tblTeacher" Association="SchoolInformationManagementSystemDBModel.FK_tblGradeCourse_tblTeacher">
+      <End Role="tblTeacher" EntitySet="tblTeachers" />
+      <End Role="tblGradeCourse" EntitySet="tblGradeCourses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblGradeSection_tblTeacher" Association="SchoolInformationManagementSystemDBModel.FK_tblGradeSection_tblTeacher">
+      <End Role="tblTeacher" EntitySet="tblTeachers" />
+      <End Role="tblGradeSection" EntitySet="tblGradeSections" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudent_tblGradeSection" Association="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblGradeSection">
+      <End Role="tblGradeSection" EntitySet="tblGradeSections" />
+      <End Role="tblStudent" EntitySet="tblStudents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentAdmission_tblGradeSection" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentAdmission_tblGradeSection">
+      <End Role="tblGradeSection" EntitySet="tblGradeSections" />
+      <End Role="tblStudentAdmission" EntitySet="tblStudentAdmissions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentTutorial_tblGradeSection" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentTutorial_tblGradeSection">
+      <End Role="tblGradeSection" EntitySet="tblGradeSections" />
+      <End Role="tblStudentTutorial" EntitySet="tblStudentTutorials" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacher_tblMaritalStatus" Association="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblMaritalStatus">
+      <End Role="tblMaritalStatu" EntitySet="tblMaritalStatus" />
+      <End Role="tblTeacher" EntitySet="tblTeachers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMeetingFollowup_tblMeetingFollowup" Association="SchoolInformationManagementSystemDBModel.FK_tblMeetingFollowup_tblMeetingFollowup">
+      <End Role="tblMeetingSchedule" EntitySet="tblMeetingSchedules" />
+      <End Role="tblMeetingFollowup" EntitySet="tblMeetingFollowups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMeetingSchedule_tblMeetingType" Association="SchoolInformationManagementSystemDBModel.FK_tblMeetingSchedule_tblMeetingType">
+      <End Role="tblMeetingType" EntitySet="tblMeetingTypes" />
+      <End Role="tblMeetingSchedule" EntitySet="tblMeetingSchedules" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentPayment_tblPaymentPeriod" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentPayment_tblPaymentPeriod">
+      <End Role="tblPaymentPeriod" EntitySet="tblPaymentPeriods" />
+      <End Role="tblStudentPayment" EntitySet="tblStudentPayments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentPayment_tblPaymentReason" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentPayment_tblPaymentReason">
+      <End Role="tblPaymentReason" EntitySet="tblPaymentReasons" />
+      <End Role="tblStudentPayment" EntitySet="tblStudentPayments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentDiscipline_tblPenalityType" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentDiscipline_tblPenalityType">
+      <End Role="tblPenalityType" EntitySet="tblPenalityTypes" />
+      <End Role="tblStudentDiscipline" EntitySet="tblStudentDisciplines" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentAttendance_tblPermissionType" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentAttendance_tblPermissionType">
+      <End Role="tblPermissionType" EntitySet="tblPermissionTypes" />
+      <End Role="tblStudentAttendance" EntitySet="tblStudentAttendances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeachersAttendance_tblPermissionType" Association="SchoolInformationManagementSystemDBModel.FK_tblTeachersAttendance_tblPermissionType">
+      <End Role="tblPermissionType" EntitySet="tblPermissionTypes" />
+      <End Role="tblTeachersAttendance" EntitySet="tblTeachersAttendances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudent_tblRegion" Association="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblRegion">
+      <End Role="tblRegion" EntitySet="tblRegions" />
+      <End Role="tblStudent" EntitySet="tblStudents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacher_tblRegion" Association="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblRegion">
+      <End Role="tblRegion" EntitySet="tblRegions" />
+      <End Role="tblTeacher" EntitySet="tblTeachers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudent_tblSubCity" Association="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblSubCity">
+      <End Role="tblSubCity" EntitySet="tblSubCities" />
+      <End Role="tblStudent" EntitySet="tblStudents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudent_tblWoreda" Association="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblWoreda">
+      <End Role="tblWoreda" EntitySet="tblWoredas" />
+      <End Role="tblStudent" EntitySet="tblStudents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentAdmission_tblStudent" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentAdmission_tblStudent">
+      <End Role="tblStudent" EntitySet="tblStudents" />
+      <End Role="tblStudentAdmission" EntitySet="tblStudentAdmissions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentAttendance_tblStudent" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentAttendance_tblStudent">
+      <End Role="tblStudent" EntitySet="tblStudents" />
+      <End Role="tblStudentAttendance" EntitySet="tblStudentAttendances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentDiscipline_tblStudent" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentDiscipline_tblStudent">
+      <End Role="tblStudent" EntitySet="tblStudents" />
+      <End Role="tblStudentDiscipline" EntitySet="tblStudentDisciplines" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentMark_tblStudent" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblStudent">
+      <End Role="tblStudent" EntitySet="tblStudents" />
+      <End Role="tblStudentMark" EntitySet="tblStudentMarks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentPayment_tblStudent" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentPayment_tblStudent">
+      <End Role="tblStudent" EntitySet="tblStudents" />
+      <End Role="tblStudentPayment" EntitySet="tblStudentPayments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStudentTutorial_tblStudent" Association="SchoolInformationManagementSystemDBModel.FK_tblStudentTutorial_tblStudent">
+      <End Role="tblStudent" EntitySet="tblStudents" />
+      <End Role="tblStudentTutorial" EntitySet="tblStudentTutorials" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacher_tblSubCity" Association="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblSubCity">
+      <End Role="tblSubCity" EntitySet="tblSubCities" />
+      <End Role="tblTeacher" EntitySet="tblTeachers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacher_tblWoreda" Association="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblWoreda">
+      <End Role="tblWoreda" EntitySet="tblWoredas" />
+      <End Role="tblTeacher" EntitySet="tblTeachers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacherEvaluation_tblTeacher" Association="SchoolInformationManagementSystemDBModel.FK_tblTeacherEvaluation_tblTeacher">
+      <End Role="tblTeacher" EntitySet="tblTeachers" />
+      <End Role="tblTeacherEvaluation" EntitySet="tblTeacherEvaluations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeachersAttendance_tblTeacher" Association="SchoolInformationManagementSystemDBModel.FK_tblTeachersAttendance_tblTeacher">
+      <End Role="tblTeacher" EntitySet="tblTeachers" />
+      <End Role="tblTeachersAttendance" EntitySet="tblTeachersAttendances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTeacherTutorial_tblTeacher" Association="SchoolInformationManagementSystemDBModel.FK_tblTeacherTutorial_tblTeacher">
+      <End Role="tblTeacher" EntitySet="tblTeachers" />
+      <End Role="tblTeacherTutorial" EntitySet="tblTeacherTutorials" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tblAcademicQuarter">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblStudentMarks" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblAcademicQuarter" FromRole="tblAcademicQuarter" ToRole="tblStudentMark" />
+    <NavigationProperty Name="tblTeacherEvaluations" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacherEvaluation_tblAcademicQuarter" FromRole="tblAcademicQuarter" ToRole="tblTeacherEvaluation" />
+  </EntityType>
+  <EntityType Name="tblCalendar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StartingDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EndingDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EventName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="tblCampu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RegionID" Type="Int32" Nullable="false" />
+    <Property Name="WoredaID" Type="Int32" Nullable="false" />
+    <Property Name="SubCityID" Type="Int32" Nullable="false" />
+    <Property Name="HouseNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="tblRegion" Relationship="SchoolInformationManagementSystemDBModel.FK_tblCampus_tblRegion" FromRole="tblCampu" ToRole="tblRegion" />
+    <NavigationProperty Name="tblSubCity" Relationship="SchoolInformationManagementSystemDBModel.FK_tblCampus_tblSubCity" FromRole="tblCampu" ToRole="tblSubCity" />
+    <NavigationProperty Name="tblWoreda" Relationship="SchoolInformationManagementSystemDBModel.FK_tblCampus_tblWoreda" FromRole="tblCampu" ToRole="tblWoreda" />
+    <NavigationProperty Name="tblStudents" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblCampus" FromRole="tblCampu" ToRole="tblStudent" />
+    <NavigationProperty Name="tblTeachers" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblCampus" FromRole="tblCampu" ToRole="tblTeacher" />
+  </EntityType>
+  <EntityType Name="tblCaseType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblStudentDisciplines" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentDiscipline_tblCaseType" FromRole="tblCaseType" ToRole="tblStudentDiscipline" />
+  </EntityType>
+  <EntityType Name="tblCourse">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblGradeCourses" Relationship="SchoolInformationManagementSystemDBModel.FK_tblGradeCourse_tblCourse" FromRole="tblCourse" ToRole="tblGradeCourse" />
+    <NavigationProperty Name="tblStudentMarks" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblCourse" FromRole="tblCourse" ToRole="tblStudentMark" />
+  </EntityType>
+  <EntityType Name="tblDepartment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblTeachers" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblDepartment" FromRole="tblDepartment" ToRole="tblTeacher" />
+  </EntityType>
+  <EntityType Name="tblEmergencyContact">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentID" Type="Int32" Nullable="false" />
+    <Property Name="Fullname" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RelationshipTypeID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="tblRelationshipType" Relationship="SchoolInformationManagementSystemDBModel.FK_tblEmergencyContact_tblRelationshipType" FromRole="tblEmergencyContact" ToRole="tblRelationshipType" />
+    <NavigationProperty Name="tblStudentDisciplines" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentDiscipline_tblEmergencyContact" FromRole="tblEmergencyContact" ToRole="tblStudentDiscipline" />
+  </EntityType>
+  <EntityType Name="tblEvaluationCriteria">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblTeacherEvaluations" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacherEvaluation_tblEvaluationCriteria" FromRole="tblEvaluationCriteria" ToRole="tblTeacherEvaluation" />
+  </EntityType>
+  <EntityType Name="tblExamType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblStudentMarks" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblExamType" FromRole="tblExamType" ToRole="tblStudentMark" />
+  </EntityType>
+  <EntityType Name="tblExtraCurricularActivity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PlannedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ActualDate" Type="DateTime" Precision="0" />
+    <Property Name="Organizers" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="tblGender">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblStudents" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblGender" FromRole="tblGender" ToRole="tblStudent" />
+    <NavigationProperty Name="tblTeachers" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblGender" FromRole="tblGender" ToRole="tblTeacher" />
+  </EntityType>
+  <EntityType Name="tblGrade">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblGradeCourses" Relationship="SchoolInformationManagementSystemDBModel.FK_tblGradeCourse_tblGrade" FromRole="tblGrade" ToRole="tblGradeCourse" />
+    <NavigationProperty Name="tblGradeSections" Relationship="SchoolInformationManagementSystemDBModel.FK_tblGradeSection_tblGrade" FromRole="tblGrade" ToRole="tblGradeSection" />
+    <NavigationProperty Name="tblStudentAdmissions" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentAdmission_tblGrade" FromRole="tblGrade" ToRole="tblStudentAdmission" />
+    <NavigationProperty Name="tblStudentMarks" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblGrade" FromRole="tblGrade" ToRole="tblStudentMark" />
+  </EntityType>
+  <EntityType Name="tblGradeCourse">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CourseID" Type="Int32" Nullable="false" />
+    <Property Name="GradeID" Type="Int32" Nullable="false" />
+    <Property Name="TeacherID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblCourse" Relationship="SchoolInformationManagementSystemDBModel.FK_tblGradeCourse_tblCourse" FromRole="tblGradeCourse" ToRole="tblCourse" />
+    <NavigationProperty Name="tblGrade" Relationship="SchoolInformationManagementSystemDBModel.FK_tblGradeCourse_tblGrade" FromRole="tblGradeCourse" ToRole="tblGrade" />
+    <NavigationProperty Name="tblTeacher" Relationship="SchoolInformationManagementSystemDBModel.FK_tblGradeCourse_tblTeacher" FromRole="tblGradeCourse" ToRole="tblTeacher" />
+  </EntityType>
+  <EntityType Name="tblGradeSection">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GradeID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RoomTeacherID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="tblGrade" Relationship="SchoolInformationManagementSystemDBModel.FK_tblGradeSection_tblGrade" FromRole="tblGradeSection" ToRole="tblGrade" />
+    <NavigationProperty Name="tblTeacher" Relationship="SchoolInformationManagementSystemDBModel.FK_tblGradeSection_tblTeacher" FromRole="tblGradeSection" ToRole="tblTeacher" />
+    <NavigationProperty Name="tblStudents" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblGradeSection" FromRole="tblGradeSection" ToRole="tblStudent" />
+    <NavigationProperty Name="tblStudentAdmissions" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentAdmission_tblGradeSection" FromRole="tblGradeSection" ToRole="tblStudentAdmission" />
+    <NavigationProperty Name="tblStudentTutorials" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentTutorial_tblGradeSection" FromRole="tblGradeSection" ToRole="tblStudentTutorial" />
+  </EntityType>
+  <EntityType Name="tblMaritalStatu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblTeachers" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblMaritalStatus" FromRole="tblMaritalStatu" ToRole="tblTeacher" />
+  </EntityType>
+  <EntityType Name="tblMeetingFollowup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MeetingScheduleID" Type="Int32" Nullable="false" />
+    <Property Name="DetailMinute" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="tblMeetingSchedule" Relationship="SchoolInformationManagementSystemDBModel.FK_tblMeetingFollowup_tblMeetingFollowup" FromRole="tblMeetingFollowup" ToRole="tblMeetingSchedule" />
+  </EntityType>
+  <EntityType Name="tblMeetingSchedule">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="StartTime" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EndDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EndTime" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MeetingTypeID" Type="Int32" Nullable="false" />
+    <Property Name="GeneralAgenda" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Organizer" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="tblMeetingFollowups" Relationship="SchoolInformationManagementSystemDBModel.FK_tblMeetingFollowup_tblMeetingFollowup" FromRole="tblMeetingSchedule" ToRole="tblMeetingFollowup" />
+    <NavigationProperty Name="tblMeetingType" Relationship="SchoolInformationManagementSystemDBModel.FK_tblMeetingSchedule_tblMeetingType" FromRole="tblMeetingSchedule" ToRole="tblMeetingType" />
+  </EntityType>
+  <EntityType Name="tblMeetingType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblMeetingSchedules" Relationship="SchoolInformationManagementSystemDBModel.FK_tblMeetingSchedule_tblMeetingType" FromRole="tblMeetingType" ToRole="tblMeetingSchedule" />
+  </EntityType>
+  <EntityType Name="tblPaymentPeriod">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblStudentPayments" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentPayment_tblPaymentPeriod" FromRole="tblPaymentPeriod" ToRole="tblStudentPayment" />
+  </EntityType>
+  <EntityType Name="tblPaymentReason">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblStudentPayments" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentPayment_tblPaymentReason" FromRole="tblPaymentReason" ToRole="tblStudentPayment" />
+  </EntityType>
+  <EntityType Name="tblPenalityType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblStudentDisciplines" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentDiscipline_tblPenalityType" FromRole="tblPenalityType" ToRole="tblStudentDiscipline" />
+  </EntityType>
+  <EntityType Name="tblPermissionType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblStudentAttendances" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentAttendance_tblPermissionType" FromRole="tblPermissionType" ToRole="tblStudentAttendance" />
+    <NavigationProperty Name="tblTeachersAttendances" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeachersAttendance_tblPermissionType" FromRole="tblPermissionType" ToRole="tblTeachersAttendance" />
+  </EntityType>
+  <EntityType Name="tblRegion">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblCampus" Relationship="SchoolInformationManagementSystemDBModel.FK_tblCampus_tblRegion" FromRole="tblRegion" ToRole="tblCampu" />
+    <NavigationProperty Name="tblStudents" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblRegion" FromRole="tblRegion" ToRole="tblStudent" />
+    <NavigationProperty Name="tblTeachers" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblRegion" FromRole="tblRegion" ToRole="tblTeacher" />
+  </EntityType>
+  <EntityType Name="tblRelationshipType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblEmergencyContacts" Relationship="SchoolInformationManagementSystemDBModel.FK_tblEmergencyContact_tblRelationshipType" FromRole="tblRelationshipType" ToRole="tblEmergencyContact" />
+  </EntityType>
+  <EntityType Name="tblSetting">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SchoolName" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="SchoolLogo" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="PaymentStartingDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="PaymentEndingDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="PassingMark" Type="Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="tblStudent">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fullname" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="MotherName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GenderID" Type="Int32" Nullable="false" />
+    <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CampusID" Type="Int32" Nullable="false" />
+    <Property Name="GradeSectionID" Type="Int32" Nullable="false" />
+    <Property Name="RegionID" Type="Int32" Nullable="false" />
+    <Property Name="SubCityID" Type="Int32" Nullable="false" />
+    <Property Name="WoredaID" Type="Int32" Nullable="false" />
+    <Property Name="HouseNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsSponsored" Type="Boolean" Nullable="false" />
+    <Property Name="IsHandicaped" Type="Boolean" Nullable="false" />
+    <Property Name="AdmissionYear" Type="Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="tblCampu" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblCampus" FromRole="tblStudent" ToRole="tblCampu" />
+    <NavigationProperty Name="tblGender" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblGender" FromRole="tblStudent" ToRole="tblGender" />
+    <NavigationProperty Name="tblGradeSection" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblGradeSection" FromRole="tblStudent" ToRole="tblGradeSection" />
+    <NavigationProperty Name="tblRegion" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblRegion" FromRole="tblStudent" ToRole="tblRegion" />
+    <NavigationProperty Name="tblSubCity" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblSubCity" FromRole="tblStudent" ToRole="tblSubCity" />
+    <NavigationProperty Name="tblWoreda" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblWoreda" FromRole="tblStudent" ToRole="tblWoreda" />
+    <NavigationProperty Name="tblStudentAdmissions" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentAdmission_tblStudent" FromRole="tblStudent" ToRole="tblStudentAdmission" />
+    <NavigationProperty Name="tblStudentAttendances" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentAttendance_tblStudent" FromRole="tblStudent" ToRole="tblStudentAttendance" />
+    <NavigationProperty Name="tblStudentDisciplines" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentDiscipline_tblStudent" FromRole="tblStudent" ToRole="tblStudentDiscipline" />
+    <NavigationProperty Name="tblStudentMarks" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblStudent" FromRole="tblStudent" ToRole="tblStudentMark" />
+    <NavigationProperty Name="tblStudentPayments" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentPayment_tblStudent" FromRole="tblStudent" ToRole="tblStudentPayment" />
+    <NavigationProperty Name="tblStudentTutorials" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentTutorial_tblStudent" FromRole="tblStudent" ToRole="tblStudentTutorial" />
+  </EntityType>
+  <EntityType Name="tblStudentAdmission">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="StudentID" Type="Int32" Nullable="false" />
+    <Property Name="GradeID" Type="Int32" Nullable="false" />
+    <Property Name="GradeSectionID" Type="Int32" Nullable="false" />
+    <Property Name="AdmissionDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdateBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblGrade" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentAdmission_tblGrade" FromRole="tblStudentAdmission" ToRole="tblGrade" />
+    <NavigationProperty Name="tblGradeSection" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentAdmission_tblGradeSection" FromRole="tblStudentAdmission" ToRole="tblGradeSection" />
+    <NavigationProperty Name="tblStudent" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentAdmission_tblStudent" FromRole="tblStudentAdmission" ToRole="tblStudent" />
+  </EntityType>
+  <EntityType Name="tblStudentAttendance">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentID" Type="Int32" Nullable="false" />
+    <Property Name="AbsensenceDuration" Type="Int32" Nullable="false" />
+    <Property Name="PermissionTypeID" Type="Int32" Nullable="false" />
+    <Property Name="PermitedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdateBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblPermissionType" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentAttendance_tblPermissionType" FromRole="tblStudentAttendance" ToRole="tblPermissionType" />
+    <NavigationProperty Name="tblStudent" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentAttendance_tblStudent" FromRole="tblStudentAttendance" ToRole="tblStudent" />
+  </EntityType>
+  <EntityType Name="tblStudentDiscipline">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudenID" Type="Int32" Nullable="false" />
+    <Property Name="CaseTypeID" Type="Int32" Nullable="false" />
+    <Property Name="PenalityTypeID" Type="Int32" Nullable="false" />
+    <Property Name="EmergencyContactID" Type="Int32" Nullable="false" />
+    <Property Name="InformedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdateBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblCaseType" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentDiscipline_tblCaseType" FromRole="tblStudentDiscipline" ToRole="tblCaseType" />
+    <NavigationProperty Name="tblEmergencyContact" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentDiscipline_tblEmergencyContact" FromRole="tblStudentDiscipline" ToRole="tblEmergencyContact" />
+    <NavigationProperty Name="tblPenalityType" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentDiscipline_tblPenalityType" FromRole="tblStudentDiscipline" ToRole="tblPenalityType" />
+    <NavigationProperty Name="tblStudent" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentDiscipline_tblStudent" FromRole="tblStudentDiscipline" ToRole="tblStudent" />
+  </EntityType>
+  <EntityType Name="tblStudentMark">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentID" Type="Int32" Nullable="false" />
+    <Property Name="GradeID" Type="Int32" Nullable="false" />
+    <Property Name="CourseID" Type="Int32" Nullable="false" />
+    <Property Name="ExamTypeID" Type="Int32" Nullable="false" />
+    <Property Name="AcademicQuarterID" Type="Int32" Nullable="false" />
+    <Property Name="OutOfTotal" Type="Int32" Nullable="false" />
+    <Property Name="MarkObtained" Type="Int32" Nullable="false" />
+    <Property Name="AcademicYear" Type="Int32" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="tblAcademicQuarter" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblAcademicQuarter" FromRole="tblStudentMark" ToRole="tblAcademicQuarter" />
+    <NavigationProperty Name="tblCourse" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblCourse" FromRole="tblStudentMark" ToRole="tblCourse" />
+    <NavigationProperty Name="tblExamType" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblExamType" FromRole="tblStudentMark" ToRole="tblExamType" />
+    <NavigationProperty Name="tblGrade" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblGrade" FromRole="tblStudentMark" ToRole="tblGrade" />
+    <NavigationProperty Name="tblStudent" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblStudent" FromRole="tblStudentMark" ToRole="tblStudent" />
+  </EntityType>
+  <EntityType Name="tblStudentPayment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentID" Type="Int32" Nullable="false" />
+    <Property Name="PaymentReasonID" Type="Int32" Nullable="false" />
+    <Property Name="PaymentPeriodID" Type="Int32" Nullable="false" />
+    <Property Name="RecieptNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CashierName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PaidBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsFullyPaid" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="tblPaymentPeriod" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentPayment_tblPaymentPeriod" FromRole="tblStudentPayment" ToRole="tblPaymentPeriod" />
+    <NavigationProperty Name="tblPaymentReason" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentPayment_tblPaymentReason" FromRole="tblStudentPayment" ToRole="tblPaymentReason" />
+    <NavigationProperty Name="tblStudent" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentPayment_tblStudent" FromRole="tblStudentPayment" ToRole="tblStudent" />
+  </EntityType>
+  <EntityType Name="tblStudentTutorial">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentID" Type="Int32" Nullable="false" />
+    <Property Name="GradeSectionID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="tblGradeSection" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentTutorial_tblGradeSection" FromRole="tblStudentTutorial" ToRole="tblGradeSection" />
+    <NavigationProperty Name="tblStudent" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudentTutorial_tblStudent" FromRole="tblStudentTutorial" ToRole="tblStudent" />
+  </EntityType>
+  <EntityType Name="tblSubCity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblCampus" Relationship="SchoolInformationManagementSystemDBModel.FK_tblCampus_tblSubCity" FromRole="tblSubCity" ToRole="tblCampu" />
+    <NavigationProperty Name="tblStudents" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblSubCity" FromRole="tblSubCity" ToRole="tblStudent" />
+    <NavigationProperty Name="tblTeachers" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblSubCity" FromRole="tblSubCity" ToRole="tblTeacher" />
+  </EntityType>
+  <EntityType Name="tblTeacher">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fullname" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="MotherName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GenderID" Type="Int32" Nullable="false" />
+    <Property Name="CampusID" Type="Int32" Nullable="false" />
+    <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FieldOfStudy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DepartmentID" Type="Int32" Nullable="false" />
+    <Property Name="MaritalStatusID" Type="Int32" Nullable="false" />
+    <Property Name="YearOfExperience" Type="Int32" Nullable="false" />
+    <Property Name="SkillDescription" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="RegionID" Type="Int32" Nullable="false" />
+    <Property Name="SubCityID" Type="Int32" Nullable="false" />
+    <Property Name="WoredaID" Type="Int32" Nullable="false" />
+    <Property Name="HouseNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HiredDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="tblCampu" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblCampus" FromRole="tblTeacher" ToRole="tblCampu" />
+    <NavigationProperty Name="tblDepartment" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblDepartment" FromRole="tblTeacher" ToRole="tblDepartment" />
+    <NavigationProperty Name="tblGender" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblGender" FromRole="tblTeacher" ToRole="tblGender" />
+    <NavigationProperty Name="tblGradeCourses" Relationship="SchoolInformationManagementSystemDBModel.FK_tblGradeCourse_tblTeacher" FromRole="tblTeacher" ToRole="tblGradeCourse" />
+    <NavigationProperty Name="tblGradeSections" Relationship="SchoolInformationManagementSystemDBModel.FK_tblGradeSection_tblTeacher" FromRole="tblTeacher" ToRole="tblGradeSection" />
+    <NavigationProperty Name="tblMaritalStatu" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblMaritalStatus" FromRole="tblTeacher" ToRole="tblMaritalStatu" />
+    <NavigationProperty Name="tblRegion" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblRegion" FromRole="tblTeacher" ToRole="tblRegion" />
+    <NavigationProperty Name="tblSubCity" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblSubCity" FromRole="tblTeacher" ToRole="tblSubCity" />
+    <NavigationProperty Name="tblWoreda" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblWoreda" FromRole="tblTeacher" ToRole="tblWoreda" />
+    <NavigationProperty Name="tblTeacherEvaluations" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacherEvaluation_tblTeacher" FromRole="tblTeacher" ToRole="tblTeacherEvaluation" />
+    <NavigationProperty Name="tblTeachersAttendances" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeachersAttendance_tblTeacher" FromRole="tblTeacher" ToRole="tblTeachersAttendance" />
+    <NavigationProperty Name="tblTeacherTutorials" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacherTutorial_tblTeacher" FromRole="tblTeacher" ToRole="tblTeacherTutorial" />
+  </EntityType>
+  <EntityType Name="tblTeacherEvaluation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeacherID" Type="Int32" Nullable="false" />
+    <Property Name="AcademicQuarterID" Type="Int32" Nullable="false" />
+    <Property Name="EvaluationCriteriaID" Type="Int32" Nullable="false" />
+    <Property Name="Mark" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="tblAcademicQuarter" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacherEvaluation_tblAcademicQuarter" FromRole="tblTeacherEvaluation" ToRole="tblAcademicQuarter" />
+    <NavigationProperty Name="tblEvaluationCriteria" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacherEvaluation_tblEvaluationCriteria" FromRole="tblTeacherEvaluation" ToRole="tblEvaluationCriteria" />
+    <NavigationProperty Name="tblTeacher" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacherEvaluation_tblTeacher" FromRole="tblTeacherEvaluation" ToRole="tblTeacher" />
+  </EntityType>
+  <EntityType Name="tblTeachersAttendance">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeachersID" Type="Int32" Nullable="false" />
+    <Property Name="AbsencenceDuration" Type="Int32" Nullable="false" />
+    <Property Name="PermissionTypeID" Type="Int32" Nullable="false" />
+    <Property Name="PermitedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="UpdateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdateBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblPermissionType" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeachersAttendance_tblPermissionType" FromRole="tblTeachersAttendance" ToRole="tblPermissionType" />
+    <NavigationProperty Name="tblTeacher" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeachersAttendance_tblTeacher" FromRole="tblTeachersAttendance" ToRole="tblTeacher" />
+  </EntityType>
+  <EntityType Name="tblTeacherTutorial">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeacherID" Type="Int32" Nullable="false" />
+    <Property Name="AcademicYear" Type="Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="tblTeacher" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacherTutorial_tblTeacher" FromRole="tblTeacherTutorial" ToRole="tblTeacher" />
+  </EntityType>
+  <EntityType Name="tblWoreda">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tblCampus" Relationship="SchoolInformationManagementSystemDBModel.FK_tblCampus_tblWoreda" FromRole="tblWoreda" ToRole="tblCampu" />
+    <NavigationProperty Name="tblStudents" Relationship="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblWoreda" FromRole="tblWoreda" ToRole="tblStudent" />
+    <NavigationProperty Name="tblTeachers" Relationship="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblWoreda" FromRole="tblWoreda" ToRole="tblTeacher" />
+  </EntityType>
+  <Association Name="FK_tblStudentMark_tblAcademicQuarter">
+    <End Type="SchoolInformationManagementSystemDBModel.tblAcademicQuarter" Role="tblAcademicQuarter" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentMark" Role="tblStudentMark" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblAcademicQuarter">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentMark">
+        <PropertyRef Name="AcademicQuarterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacherEvaluation_tblAcademicQuarter">
+    <End Type="SchoolInformationManagementSystemDBModel.tblAcademicQuarter" Role="tblAcademicQuarter" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeacherEvaluation" Role="tblTeacherEvaluation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblAcademicQuarter">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacherEvaluation">
+        <PropertyRef Name="AcademicQuarterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCampus_tblRegion">
+    <End Type="SchoolInformationManagementSystemDBModel.tblRegion" Role="tblRegion" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblCampu" Role="tblCampu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRegion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblCampu">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCampus_tblSubCity">
+    <End Type="SchoolInformationManagementSystemDBModel.tblSubCity" Role="tblSubCity" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblCampu" Role="tblCampu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSubCity">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblCampu">
+        <PropertyRef Name="SubCityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCampus_tblWoreda">
+    <End Type="SchoolInformationManagementSystemDBModel.tblWoreda" Role="tblWoreda" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblCampu" Role="tblCampu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblWoreda">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblCampu">
+        <PropertyRef Name="WoredaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudent_tblCampus">
+    <End Type="SchoolInformationManagementSystemDBModel.tblCampu" Role="tblCampu" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudent" Role="tblStudent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCampu">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudent">
+        <PropertyRef Name="CampusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacher_tblCampus">
+    <End Type="SchoolInformationManagementSystemDBModel.tblCampu" Role="tblCampu" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeacher" Role="tblTeacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCampu">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacher">
+        <PropertyRef Name="CampusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentDiscipline_tblCaseType">
+    <End Type="SchoolInformationManagementSystemDBModel.tblCaseType" Role="tblCaseType" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentDiscipline" Role="tblStudentDiscipline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCaseType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentDiscipline">
+        <PropertyRef Name="CaseTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblGradeCourse_tblCourse">
+    <End Type="SchoolInformationManagementSystemDBModel.tblCourse" Role="tblCourse" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblGradeCourse" Role="tblGradeCourse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCourse">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblGradeCourse">
+        <PropertyRef Name="CourseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentMark_tblCourse">
+    <End Type="SchoolInformationManagementSystemDBModel.tblCourse" Role="tblCourse" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentMark" Role="tblStudentMark" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCourse">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentMark">
+        <PropertyRef Name="CourseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacher_tblDepartment">
+    <End Type="SchoolInformationManagementSystemDBModel.tblDepartment" Role="tblDepartment" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeacher" Role="tblTeacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDepartment">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacher">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmergencyContact_tblRelationshipType">
+    <End Type="SchoolInformationManagementSystemDBModel.tblRelationshipType" Role="tblRelationshipType" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblEmergencyContact" Role="tblEmergencyContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRelationshipType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblEmergencyContact">
+        <PropertyRef Name="RelationshipTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentDiscipline_tblEmergencyContact">
+    <End Type="SchoolInformationManagementSystemDBModel.tblEmergencyContact" Role="tblEmergencyContact" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentDiscipline" Role="tblStudentDiscipline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmergencyContact">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentDiscipline">
+        <PropertyRef Name="EmergencyContactID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacherEvaluation_tblEvaluationCriteria">
+    <End Type="SchoolInformationManagementSystemDBModel.tblEvaluationCriteria" Role="tblEvaluationCriteria" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeacherEvaluation" Role="tblTeacherEvaluation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEvaluationCriteria">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacherEvaluation">
+        <PropertyRef Name="EvaluationCriteriaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentMark_tblExamType">
+    <End Type="SchoolInformationManagementSystemDBModel.tblExamType" Role="tblExamType" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentMark" Role="tblStudentMark" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblExamType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentMark">
+        <PropertyRef Name="ExamTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudent_tblGender">
+    <End Type="SchoolInformationManagementSystemDBModel.tblGender" Role="tblGender" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudent" Role="tblStudent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGender">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudent">
+        <PropertyRef Name="GenderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacher_tblGender">
+    <End Type="SchoolInformationManagementSystemDBModel.tblGender" Role="tblGender" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeacher" Role="tblTeacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGender">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacher">
+        <PropertyRef Name="GenderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblGradeCourse_tblGrade">
+    <End Type="SchoolInformationManagementSystemDBModel.tblGrade" Role="tblGrade" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblGradeCourse" Role="tblGradeCourse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGrade">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblGradeCourse">
+        <PropertyRef Name="GradeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblGradeSection_tblGrade">
+    <End Type="SchoolInformationManagementSystemDBModel.tblGrade" Role="tblGrade" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblGradeSection" Role="tblGradeSection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGrade">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblGradeSection">
+        <PropertyRef Name="GradeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentAdmission_tblGrade">
+    <End Type="SchoolInformationManagementSystemDBModel.tblGrade" Role="tblGrade" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentAdmission" Role="tblStudentAdmission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGrade">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentAdmission">
+        <PropertyRef Name="GradeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentMark_tblGrade">
+    <End Type="SchoolInformationManagementSystemDBModel.tblGrade" Role="tblGrade" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentMark" Role="tblStudentMark" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGrade">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentMark">
+        <PropertyRef Name="GradeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblGradeCourse_tblTeacher">
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeacher" Role="tblTeacher" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblGradeCourse" Role="tblGradeCourse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTeacher">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblGradeCourse">
+        <PropertyRef Name="TeacherID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblGradeSection_tblTeacher">
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeacher" Role="tblTeacher" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblGradeSection" Role="tblGradeSection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTeacher">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblGradeSection">
+        <PropertyRef Name="RoomTeacherID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudent_tblGradeSection">
+    <End Type="SchoolInformationManagementSystemDBModel.tblGradeSection" Role="tblGradeSection" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudent" Role="tblStudent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGradeSection">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudent">
+        <PropertyRef Name="GradeSectionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentAdmission_tblGradeSection">
+    <End Type="SchoolInformationManagementSystemDBModel.tblGradeSection" Role="tblGradeSection" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentAdmission" Role="tblStudentAdmission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGradeSection">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentAdmission">
+        <PropertyRef Name="GradeSectionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentTutorial_tblGradeSection">
+    <End Type="SchoolInformationManagementSystemDBModel.tblGradeSection" Role="tblGradeSection" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentTutorial" Role="tblStudentTutorial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGradeSection">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentTutorial">
+        <PropertyRef Name="GradeSectionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacher_tblMaritalStatus">
+    <End Type="SchoolInformationManagementSystemDBModel.tblMaritalStatu" Role="tblMaritalStatu" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeacher" Role="tblTeacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMaritalStatu">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacher">
+        <PropertyRef Name="MaritalStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMeetingFollowup_tblMeetingFollowup">
+    <End Type="SchoolInformationManagementSystemDBModel.tblMeetingSchedule" Role="tblMeetingSchedule" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblMeetingFollowup" Role="tblMeetingFollowup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMeetingSchedule">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblMeetingFollowup">
+        <PropertyRef Name="MeetingScheduleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMeetingSchedule_tblMeetingType">
+    <End Type="SchoolInformationManagementSystemDBModel.tblMeetingType" Role="tblMeetingType" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblMeetingSchedule" Role="tblMeetingSchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMeetingType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblMeetingSchedule">
+        <PropertyRef Name="MeetingTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentPayment_tblPaymentPeriod">
+    <End Type="SchoolInformationManagementSystemDBModel.tblPaymentPeriod" Role="tblPaymentPeriod" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentPayment" Role="tblStudentPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPaymentPeriod">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentPayment">
+        <PropertyRef Name="PaymentPeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentPayment_tblPaymentReason">
+    <End Type="SchoolInformationManagementSystemDBModel.tblPaymentReason" Role="tblPaymentReason" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentPayment" Role="tblStudentPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPaymentReason">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentPayment">
+        <PropertyRef Name="PaymentReasonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentDiscipline_tblPenalityType">
+    <End Type="SchoolInformationManagementSystemDBModel.tblPenalityType" Role="tblPenalityType" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentDiscipline" Role="tblStudentDiscipline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPenalityType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentDiscipline">
+        <PropertyRef Name="PenalityTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentAttendance_tblPermissionType">
+    <End Type="SchoolInformationManagementSystemDBModel.tblPermissionType" Role="tblPermissionType" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentAttendance" Role="tblStudentAttendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPermissionType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentAttendance">
+        <PropertyRef Name="PermissionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeachersAttendance_tblPermissionType">
+    <End Type="SchoolInformationManagementSystemDBModel.tblPermissionType" Role="tblPermissionType" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeachersAttendance" Role="tblTeachersAttendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPermissionType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeachersAttendance">
+        <PropertyRef Name="PermissionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudent_tblRegion">
+    <End Type="SchoolInformationManagementSystemDBModel.tblRegion" Role="tblRegion" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudent" Role="tblStudent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRegion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudent">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacher_tblRegion">
+    <End Type="SchoolInformationManagementSystemDBModel.tblRegion" Role="tblRegion" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeacher" Role="tblTeacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRegion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacher">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudent_tblSubCity">
+    <End Type="SchoolInformationManagementSystemDBModel.tblSubCity" Role="tblSubCity" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudent" Role="tblStudent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSubCity">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudent">
+        <PropertyRef Name="SubCityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudent_tblWoreda">
+    <End Type="SchoolInformationManagementSystemDBModel.tblWoreda" Role="tblWoreda" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudent" Role="tblStudent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblWoreda">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudent">
+        <PropertyRef Name="WoredaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentAdmission_tblStudent">
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudent" Role="tblStudent" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentAdmission" Role="tblStudentAdmission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStudent">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentAdmission">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentAttendance_tblStudent">
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudent" Role="tblStudent" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentAttendance" Role="tblStudentAttendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStudent">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentAttendance">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentDiscipline_tblStudent">
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudent" Role="tblStudent" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentDiscipline" Role="tblStudentDiscipline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStudent">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentDiscipline">
+        <PropertyRef Name="StudenID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentMark_tblStudent">
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudent" Role="tblStudent" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentMark" Role="tblStudentMark" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStudent">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentMark">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentPayment_tblStudent">
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudent" Role="tblStudent" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentPayment" Role="tblStudentPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStudent">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentPayment">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStudentTutorial_tblStudent">
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudent" Role="tblStudent" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblStudentTutorial" Role="tblStudentTutorial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStudent">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblStudentTutorial">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacher_tblSubCity">
+    <End Type="SchoolInformationManagementSystemDBModel.tblSubCity" Role="tblSubCity" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeacher" Role="tblTeacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSubCity">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacher">
+        <PropertyRef Name="SubCityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacher_tblWoreda">
+    <End Type="SchoolInformationManagementSystemDBModel.tblWoreda" Role="tblWoreda" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeacher" Role="tblTeacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblWoreda">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacher">
+        <PropertyRef Name="WoredaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacherEvaluation_tblTeacher">
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeacher" Role="tblTeacher" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeacherEvaluation" Role="tblTeacherEvaluation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTeacher">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacherEvaluation">
+        <PropertyRef Name="TeacherID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeachersAttendance_tblTeacher">
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeacher" Role="tblTeacher" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeachersAttendance" Role="tblTeachersAttendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTeacher">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeachersAttendance">
+        <PropertyRef Name="TeachersID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTeacherTutorial_tblTeacher">
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeacher" Role="tblTeacher" Multiplicity="1" />
+    <End Type="SchoolInformationManagementSystemDBModel.tblTeacherTutorial" Role="tblTeacherTutorial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTeacher">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTeacherTutorial">
+        <PropertyRef Name="TeacherID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,169 @@
+E:\CREAVERS\School Information Management System\SIMS\obj\Debug\SIMS.csprojResolveAssemblyReference.cache
+E:\CREAVERS\School Information Management System\SIMS\bin\roslyn\csc.exe
+E:\CREAVERS\School Information Management System\SIMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CREAVERS\School Information Management System\SIMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CREAVERS\School Information Management System\SIMS\bin\roslyn\System.Collections.Immutable.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\roslyn\System.Reflection.Metadata.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\roslyn\vbc.exe
+E:\CREAVERS\School Information Management System\SIMS\bin\roslyn\VBCSCompiler.exe
+E:\CREAVERS\School Information Management System\SIMS\bin\roslyn\VBCSCompiler.exe.config
+E:\CREAVERS\School Information Management System\SIMS\bin\SIMS.dll.config
+E:\CREAVERS\School Information Management System\SIMS\bin\SIMS.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\SIMS.pdb
+E:\CREAVERS\School Information Management System\SIMS\bin\Antlr3.Runtime.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\BusinessEntity.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\BusinessLogic.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\EntityFramework.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\EntityFramework.SqlServer.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.AspNet.Identity.Core.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.Cookies.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.Facebook.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.Google.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.OAuth.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.Twitter.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Web.Infrastructure.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\Newtonsoft.Json.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\Owin.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Net.Http.Formatting.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.Helpers.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.Http.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.Http.Owin.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.Http.WebHost.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.Mvc.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.Optimization.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.Razor.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.WebPages.Deployment.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.WebPages.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.WebPages.Razor.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\WebGrease.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\DataAccessLogic.dll
+E:\CREAVERS\School Information Management System\SIMS\bin\BusinessEntity.pdb
+E:\CREAVERS\School Information Management System\SIMS\bin\BusinessLogic.pdb
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\Newtonsoft.Json.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Net.Http.Formatting.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.Helpers.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.Http.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.Http.WebHost.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.Mvc.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.Optimization.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.Razor.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.WebPages.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.WebPages.Deployment.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.WebPages.Razor.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\Antlr3.Runtime.pdb
+E:\CREAVERS\School Information Management System\SIMS\bin\EntityFramework.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\EntityFramework.SqlServer.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.AspNet.Identity.Core.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.Facebook.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.Cookies.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.OAuth.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.Google.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.Twitter.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\System.Web.Http.Owin.xml
+E:\CREAVERS\School Information Management System\SIMS\bin\DataAccessLogic.pdb
+E:\CREAVERS\School Information Management System\SIMS\obj\Debug\SIMS.dll
+E:\CREAVERS\School Information Management System\SIMS\obj\Debug\SIMS.pdb
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\roslyn\csc.exe
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\roslyn\System.Collections.Immutable.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\roslyn\System.Reflection.Metadata.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\roslyn\vbc.exe
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\roslyn\VBCSCompiler.exe
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\roslyn\VBCSCompiler.exe.config
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\SIMS.dll.config
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\SIMS.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\SIMS.pdb
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Antlr3.Runtime.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\BusinessEntity.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\BusinessLogic.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\EntityFramework.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\EntityFramework.SqlServer.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.AspNet.Identity.Core.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.Cookies.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.Facebook.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.Google.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.OAuth.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.Twitter.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Web.Infrastructure.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Newtonsoft.Json.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Owin.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Net.Http.Formatting.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.Helpers.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.Http.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.Http.Owin.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.Http.WebHost.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.Mvc.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.Optimization.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.Razor.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.WebPages.Deployment.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.WebPages.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.WebPages.Razor.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\WebGrease.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\DataAccessLogic.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\BusinessEntity.pdb
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\BusinessLogic.pdb
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Newtonsoft.Json.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Net.Http.Formatting.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.Helpers.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.Http.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.Http.WebHost.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.Mvc.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.Optimization.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.Razor.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.WebPages.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.WebPages.Deployment.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.WebPages.Razor.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Antlr3.Runtime.pdb
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\EntityFramework.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\EntityFramework.SqlServer.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.AspNet.Identity.Core.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.Facebook.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.Cookies.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.OAuth.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.Google.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.Twitter.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\System.Web.Http.Owin.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\DataAccessLogic.pdb
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\bin\DataAccessLogic.dll.config
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\obj\Debug\SIMS.csprojAssemblyReference.cache
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\obj\Debug\SIMS.csproj.CoreCompileInputs.cache
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\obj\Debug\SIMS.csproj.CopyComplete
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\obj\Debug\SIMS.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\SIMS\obj\Debug\SIMS.pdb

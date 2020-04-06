@@ -1,0 +1,25 @@
+E:\CREAVERS\School Information Management System\BusinessLogic\bin\Debug\BusinessLogic.dll
+E:\CREAVERS\School Information Management System\BusinessLogic\bin\Debug\BusinessLogic.pdb
+E:\CREAVERS\School Information Management System\BusinessLogic\bin\Debug\BusinessEntity.dll
+E:\CREAVERS\School Information Management System\BusinessLogic\bin\Debug\DataAccessLogic.dll
+E:\CREAVERS\School Information Management System\BusinessLogic\bin\Debug\EntityFramework.dll
+E:\CREAVERS\School Information Management System\BusinessLogic\bin\Debug\BusinessEntity.pdb
+E:\CREAVERS\School Information Management System\BusinessLogic\bin\Debug\DataAccessLogic.pdb
+E:\CREAVERS\School Information Management System\BusinessLogic\bin\Debug\EntityFramework.xml
+E:\CREAVERS\School Information Management System\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+E:\CREAVERS\School Information Management System\BusinessLogic\obj\Debug\BusinessLogic.dll
+E:\CREAVERS\School Information Management System\BusinessLogic\obj\Debug\BusinessLogic.pdb
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessLogic\bin\Debug\BusinessLogic.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessLogic\bin\Debug\BusinessLogic.pdb
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessLogic\bin\Debug\BusinessEntity.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessLogic\bin\Debug\DataAccessLogic.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessLogic\bin\Debug\EntityFramework.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessLogic\bin\Debug\BusinessEntity.pdb
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessLogic\bin\Debug\DataAccessLogic.pdb
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessLogic\bin\Debug\DataAccessLogic.dll.config
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessLogic\bin\Debug\EntityFramework.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessLogic\obj\Debug\BusinessLogic.csprojAssemblyReference.cache
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessLogic\obj\Debug\BusinessLogic.csproj.CopyComplete
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessLogic\obj\Debug\BusinessLogic.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessLogic\obj\Debug\BusinessLogic.pdb

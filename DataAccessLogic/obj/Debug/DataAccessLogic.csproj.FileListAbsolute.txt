@@ -1,0 +1,21 @@
+E:\CREAVERS\School Information Management System\DataAccessLogic\bin\Debug\DataAccessLogic.dll.config
+E:\CREAVERS\School Information Management System\DataAccessLogic\bin\Debug\DataAccessLogic.dll
+E:\CREAVERS\School Information Management System\DataAccessLogic\bin\Debug\DataAccessLogic.pdb
+E:\CREAVERS\School Information Management System\DataAccessLogic\bin\Debug\EntityFramework.dll
+E:\CREAVERS\School Information Management System\DataAccessLogic\bin\Debug\EntityFramework.SqlServer.dll
+E:\CREAVERS\School Information Management System\DataAccessLogic\bin\Debug\EntityFramework.xml
+E:\CREAVERS\School Information Management System\DataAccessLogic\bin\Debug\EntityFramework.SqlServer.xml
+E:\CREAVERS\School Information Management System\DataAccessLogic\obj\Debug\DataAccessLogic.dll
+E:\CREAVERS\School Information Management System\DataAccessLogic\obj\Debug\DataAccessLogic.pdb
+D:\BT IT Solutions\CREAVERS\School Information Management System\DataAccessLogic\bin\Debug\DataAccessLogic.dll.config
+D:\BT IT Solutions\CREAVERS\School Information Management System\DataAccessLogic\bin\Debug\DataAccessLogic.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\DataAccessLogic\bin\Debug\DataAccessLogic.pdb
+D:\BT IT Solutions\CREAVERS\School Information Management System\DataAccessLogic\bin\Debug\EntityFramework.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\DataAccessLogic\bin\Debug\EntityFramework.SqlServer.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\DataAccessLogic\bin\Debug\EntityFramework.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\DataAccessLogic\bin\Debug\EntityFramework.SqlServer.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\DataAccessLogic\obj\Debug\DataAccessLogic.csprojAssemblyReference.cache
+D:\BT IT Solutions\CREAVERS\School Information Management System\DataAccessLogic\obj\Debug\DataAccessLogic.csproj.CoreCompileInputs.cache
+D:\BT IT Solutions\CREAVERS\School Information Management System\DataAccessLogic\obj\Debug\DataAccessLogic.csproj.CopyComplete
+D:\BT IT Solutions\CREAVERS\School Information Management System\DataAccessLogic\obj\Debug\DataAccessLogic.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\DataAccessLogic\obj\Debug\DataAccessLogic.pdb

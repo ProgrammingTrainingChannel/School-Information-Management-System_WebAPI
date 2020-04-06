@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3cb9a7e15b734520845c4013c7b264dc" Name="Diagram1" ZoomLevel="63">
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblAcademicQuarter" Width="1.5" PointX="8.25" PointY="50.375" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblCalendar" Width="1.5" PointX="5.75" PointY="5.75" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblCampu" Width="1.5" PointX="3" PointY="23.375" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblCaseType" Width="1.5" PointX="8.25" PointY="10.875" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblCourse" Width="1.5" PointX="8.25" PointY="47.25" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblDepartment" Width="1.5" PointX="3" PointY="28.875" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblEmergencyContact" Width="1.5" PointX="8.25" PointY="33.75" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblEvaluationCriteria" Width="1.5" PointX="14.25" PointY="33.375" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblExamType" Width="1.5" PointX="8.25" PointY="44.25" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblExtraCurricularActivity" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblGender" Width="1.5" PointX="6" PointY="13.625" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblGrade" Width="1.5" PointX="5.25" PointY="17.25" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblGradeCourse" Width="1.5" PointX="7.5" PointY="30.125" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblGradeSection" Width="1.5" PointX="7.5" PointY="17.75" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblMaritalStatu" Width="1.5" PointX="3" PointY="20" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblMeetingFollowup" Width="1.5" PointX="5.25" PointY="1.75" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblMeetingSchedule" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblMeetingType" Width="1.5" PointX="0.75" PointY="2" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblPaymentPeriod" Width="1.5" PointX="11.25" PointY="34" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblPaymentReason" Width="1.5" PointX="11.25" PointY="36.875" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblPenalityType" Width="1.5" PointX="8.25" PointY="13.875" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblPermissionType" Width="1.5" PointX="11.25" PointY="15.375" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblRegion" Width="1.5" PointX="0.75" PointY="27.875" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblRelationshipType" Width="1.5" PointX="6" PointY="34.375" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblSetting" Width="1.5" PointX="2.75" PointY="6.75" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblStudent" Width="1.5" PointX="8.25" PointY="22.125" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblStudentAdmission" Width="1.5" PointX="10.5" PointY="23.875" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblStudentAttendance" Width="1.5" PointX="13.5" PointY="23.875" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblStudentDiscipline" Width="1.5" PointX="10.5" PointY="18.5" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblStudentMark" Width="1.5" PointX="10.5" PointY="28.125" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblStudentPayment" Width="1.5" PointX="13.5" PointY="28.5" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblStudentTutorial" Width="1.5" PointX="13.5" PointY="20.125" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblSubCity" Width="1.5" PointX="0.75" PointY="20.625" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblTeacher" Width="1.5" PointX="5.25" PointY="21.625" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblTeacherEvaluation" Width="1.5" PointX="16.5" PointY="23.875" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblTeachersAttendance" Width="1.5" PointX="13.5" PointY="15.875" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblTeacherTutorial" Width="1.5" PointX="7.5" PointY="40.125" />
+        <EntityTypeShape EntityType="SchoolInformationManagementSystemDBModel.tblWoreda" Width="1.5" PointX="0.75" PointY="24.25" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblAcademicQuarter" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblTeacherEvaluation_tblAcademicQuarter" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblCampus_tblRegion" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblCampus_tblSubCity" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblCampus_tblWoreda" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblCampus" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblCampus" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentDiscipline_tblCaseType" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblGradeCourse_tblCourse" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblCourse" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblDepartment" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblEmergencyContact_tblRelationshipType" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentDiscipline_tblEmergencyContact" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblTeacherEvaluation_tblEvaluationCriteria" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblExamType" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblGender" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblGender" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblGradeCourse_tblGrade" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblGradeSection_tblGrade" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentAdmission_tblGrade" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblGrade" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblGradeCourse_tblTeacher" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblGradeSection_tblTeacher" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblGradeSection" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentAdmission_tblGradeSection" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentTutorial_tblGradeSection" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblMaritalStatus" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblMeetingFollowup_tblMeetingFollowup" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblMeetingSchedule_tblMeetingType" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentPayment_tblPaymentPeriod" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentPayment_tblPaymentReason" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentDiscipline_tblPenalityType" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentAttendance_tblPermissionType" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblTeachersAttendance_tblPermissionType" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblRegion" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblRegion" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblSubCity" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudent_tblWoreda" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentAdmission_tblStudent" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentAttendance_tblStudent" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentDiscipline_tblStudent" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentMark_tblStudent" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentPayment_tblStudent" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblStudentTutorial_tblStudent" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblSubCity" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblTeacher_tblWoreda" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblTeacherEvaluation_tblTeacher" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblTeachersAttendance_tblTeacher" />
+        <AssociationConnector Association="SchoolInformationManagementSystemDBModel.FK_tblTeacherTutorial_tblTeacher" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

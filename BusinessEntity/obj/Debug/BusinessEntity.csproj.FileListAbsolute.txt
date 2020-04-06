@@ -1,0 +1,21 @@
+E:\CREAVERS\School Information Management System\BusinessEntity\obj\Debug\BusinessEntity.csprojResolveAssemblyReference.cache
+E:\CREAVERS\School Information Management System\BusinessEntity\bin\Debug\BusinessEntity.dll
+E:\CREAVERS\School Information Management System\BusinessEntity\bin\Debug\BusinessEntity.pdb
+E:\CREAVERS\School Information Management System\BusinessEntity\bin\Debug\DataAccessLogic.dll
+E:\CREAVERS\School Information Management System\BusinessEntity\bin\Debug\EntityFramework.dll
+E:\CREAVERS\School Information Management System\BusinessEntity\bin\Debug\DataAccessLogic.pdb
+E:\CREAVERS\School Information Management System\BusinessEntity\bin\Debug\EntityFramework.xml
+E:\CREAVERS\School Information Management System\BusinessEntity\obj\Debug\BusinessEntity.dll
+E:\CREAVERS\School Information Management System\BusinessEntity\obj\Debug\BusinessEntity.pdb
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessEntity\bin\Debug\BusinessEntity.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessEntity\bin\Debug\BusinessEntity.pdb
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessEntity\bin\Debug\DataAccessLogic.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessEntity\bin\Debug\EntityFramework.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessEntity\bin\Debug\DataAccessLogic.pdb
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessEntity\bin\Debug\DataAccessLogic.dll.config
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessEntity\bin\Debug\EntityFramework.xml
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessEntity\obj\Debug\BusinessEntity.csprojAssemblyReference.cache
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessEntity\obj\Debug\BusinessEntity.csproj.CoreCompileInputs.cache
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessEntity\obj\Debug\BusinessEntity.csproj.CopyComplete
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessEntity\obj\Debug\BusinessEntity.dll
+D:\BT IT Solutions\CREAVERS\School Information Management System\BusinessEntity\obj\Debug\BusinessEntity.pdb

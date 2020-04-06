@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6345D80D-CCC7-4323-9341-CDDE26D9D541}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessEntity</RootNamespace>
+    <AssemblyName>BusinessEntity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admission\StudentEntity.cs" />
+    <Compile Include="Admission\TeacherEntity.cs" />
+    <Compile Include="ClassTeacherSchedule\GradeCourseEntity.cs" />
+    <Compile Include="ExtraCurricular\ExtraCurricularActivityEntity.cs" />
+    <Compile Include="Lookup\MeetingTypeEntity.cs" />
+    <Compile Include="Lookup\ExamTypeEntity.cs" />
+    <Compile Include="Lookup\CaseTypeEntity.cs" />
+    <Compile Include="Lookup\PermissionTypeEntity.cs" />
+    <Compile Include="Lookup\PenalityTypeEntity.cs" />
+    <Compile Include="Lookup\RelationshipTypeEntity.cs" />
+    <Compile Include="Lookup\CourseEntity.cs" />
+    <Compile Include="Lookup\MaritalStatusEntity.cs" />
+    <Compile Include="Lookup\DepartmentEntity.cs" />
+    <Compile Include="Lookup\PaymentReasonEntity.cs" />
+    <Compile Include="Lookup\PaymentPeriodEntity.cs" />
+    <Compile Include="Lookup\GradeEntity.cs" />
+    <Compile Include="Lookup\GradeSectionEntity.cs" />
+    <Compile Include="Lookup\GenderEntity.cs" />
+    <Compile Include="Lookup\WoredaEntity.cs" />
+    <Compile Include="Lookup\SubCityEntity.cs" />
+    <Compile Include="Lookup\RegionEntity.cs" />
+    <Compile Include="Lookup\CampusEntity.cs" />
+    <Compile Include="Meeting\MeetingFollowupEntity.cs" />
+    <Compile Include="Meeting\MeetingScheduleEntity.cs" />
+    <Compile Include="TeacherEvaluation\EvaluationCriteriaEntity.cs" />
+    <Compile Include="Lookup\AcademicQuarterEntity.cs" />
+    <Compile Include="IBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Result.cs" />
+    <Compile Include="TeacherEvaluation\StudentPaymentEntity.cs" />
+    <Compile Include="TeacherEvaluation\TeacherEvaluationEntity.cs" />
+    <Compile Include="Tutorial\TeacherTutorialEntity.cs" />
+    <Compile Include="Tutorial\StudentTutorialEntity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessLogic\DataAccessLogic.csproj">
+      <Project>{a6ee9dd9-fee6-43c0-b3e5-ac2c4b3d26b3}</Project>
+      <Name>DataAccessLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AttendanceDescipline\" />
+    <Folder Include="StudentGrading\" />
+    <Folder Include="StudentPayment\" />
+    <Folder Include="SystemSecurity\" />
+    <Folder Include="SystemSetting\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
